@@ -13,16 +13,16 @@ I primarily created this to run `virt-manager` on macOS easily.
 1. Install `socat`: 
    - `brew install socat`
    
-2. Install `xquartz`:
+1. Install `xquartz`:
    - `brew install --cask xquartz`
    
-3. [Install Docker](https://docs.docker.com/docker-for-mac/install/)
+1. [Install Docker](https://docs.docker.com/docker-for-mac/install/)
 
-4. Make sure you have setup ssh between the Host you are trying to connect and your machine before running the virt-manager Docker container.
-   - `ssh-copy-id user@host`
-
-5. Build virt-manager docker container locally:
+1. Build virt-manager docker container locally:
    - `docker build -t virt-manager-docker .`
+   
+1. Make sure you have setup ssh between the Host you are trying to connect and your machine before running the virt-manager Docker container.
+   - `ssh-copy-id user@host`
 
 #### Start
 
